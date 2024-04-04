@@ -1,0 +1,21 @@
+<h1>Markets</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>City</th>
+			<th>State</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody class="market">
+		<% @markets.each do |market| %>
+			<tr>
+				<td class="name"><%= market.name %></td>
+				<td class="city"><%= market.city %></td>
+				<td class="state"><%= market.state %></td>
+				<td></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
