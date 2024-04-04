@@ -1,0 +1,10 @@
+<center>
+	<h1><%= @market.name %></h1>
+	<p><%= "#{@market.street}" %></p>
+	<p><%= "#{@market.city}, #{@market.state} #{@market.zip}" %></p>
+</center>
+<br>
+<h4 class="market-vendor-hdr">Vendors at our Market:</h4>
+<% @vendors.each do |vendor| %>
+	<p class=<%= "vendor-index" %>><%= link_to vendor.name, vendor_path(vendor.id) %></p>
+<% end %>

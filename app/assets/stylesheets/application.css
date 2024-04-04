@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ .vendor-index,
+ .market-vendor-hdr {
+	margin-left: 15%;
+ }

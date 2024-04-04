@@ -14,7 +14,9 @@
 				<td class="name"><%= market.name %></td>
 				<td class="city"><%= market.city %></td>
 				<td class="state"><%= market.state %></td>
-				<td></td>
+				<td id=<%= "info-btn-#{market.id}" %>>
+					<%= button_to "More Info", market_path(market.id), data: {turbo: false}, method: :get %>
+				</td>
 			</tr>
 		<% end %>
 	</tbody>
