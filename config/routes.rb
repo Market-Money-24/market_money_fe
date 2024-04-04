@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   resources :markets, only: [:index, :show] do 
-    resources :vendors, only: [:index], to: "market#vendors" do
+    resources :vendors, only: [:index], to: "market_vendors#index" do
 
     end
   end

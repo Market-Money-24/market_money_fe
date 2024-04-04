@@ -1,5 +1,6 @@
-class VendorsController < ApplicationController
+class MarketVendorsController < ApplicationController
 	def index
-		@market_vendors = MarketVendorsFacade.new.vendors
+		facade = MarketVendorsFacade.new
+		@market_vendors = facade.vendors(params[:market_id])
 	end
 end

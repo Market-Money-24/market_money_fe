@@ -6,7 +6,7 @@ class MarketsFacade
 
 	def market_poro_factory(market_data)
 		market_data.flat_map do |market|
-			MarketPoro.new(market[:attributes])
+			MarketPoro.new(market[:id], market[:attributes])
 		end
 	end
 end

@@ -1,6 +1,6 @@
 class MarketVendorsService < ApplicationController
-	def get_all_vendors
-		get_url("/api/v0/vendors")
+	def get_all_vendors(market_id)
+		get_url("/api/v0/markets/#{market_id}/vendors")
 	end
 
 	def get_url(url)

@@ -1,6 +1,10 @@
 require "rails_helper"
 
 RSpec.describe "Markets Index page", type: :feature do 
+	before(:each) do 
+		WebMock.allow_net_connect!
+	end
+	
 	it "displays all the markets in the database, with their name, city, state, and a button with 'more info' on each market" do 
 		visit markets_path
 		
