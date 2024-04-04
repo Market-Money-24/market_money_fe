@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Markets Show page", type: :feature do 
+RSpec.describe "Markets Show page", :vcr, type: :feature do 
 	before(:each) do
 		WebMock.allow_net_connect!
 		@market_id = 322474

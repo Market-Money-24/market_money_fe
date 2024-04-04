@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Markets Index page", type: :feature do 
+RSpec.describe "Markets Index page", :vcr, type: :feature do 
 	before(:each) do 
 		WebMock.allow_net_connect!
 	end

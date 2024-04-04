@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/54924
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"203776f85dd4590b3e0c29c945d8e056"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ec0c9ad7-3e0e-4b75-a99b-592cfdd5c502
+      X-Runtime:
+      - '0.004737'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.23, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.01
+      Content-Length:
+      - '228'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"54924","type":"vendor","attributes":{"name":"CHZ PLZ","description":"This
+        vendor offers a variety of artisanal cheeses.","contact_name":"Verna Goodwin
+        Ret.","contact_phone":"595-100-6344","credit_accepted":true}}}'
+  recorded_at: Thu, 04 Apr 2024 20:53:35 GMT
+recorded_with: VCR 6.2.0

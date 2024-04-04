@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Vendor Show page", type: :feature do 
+RSpec.describe "Vendor Show page", :vcr, type: :feature do 
 	before(:each) do 
 		WebMock.allow_net_connect!
 	end
