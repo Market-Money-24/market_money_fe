@@ -173,4 +173,56 @@ http_interactions:
         Appeal","description":"Fresh herbs and herbal products.","contact_name":"Mattie
         Doyle","contact_phone":"394.419.5264","credit_accepted":true}}]}'
   recorded_at: Thu, 04 Apr 2024 20:53:35 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322474
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"5e733b72a4473698cd0065fe9c74390b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7605f644-ebc3-4b3d-a8b1-7935c20a1abb
+      X-Runtime:
+      - '0.050741'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=11.66,
+        instantiation.active_record;dur=0.24, process_action.action_controller;dur=38.19
+      Content-Length:
+      - '244'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"322474","type":"market","attributes":{"vendor_count":35,"name":"2nd
+        Street Farmers'' Market","street":"194 second street","city":"Amherst","county":"Amherst","state":"Virginia","zip":"24521","lat":"37.583311","lon":"-79.048573"}}}'
+  recorded_at: Fri, 05 Apr 2024 03:38:26 GMT
 recorded_with: VCR 6.2.0

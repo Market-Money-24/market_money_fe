@@ -39,19 +39,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 573cc682-6ddf-4d96-bd3c-d06d5814a788
+      - 13e5746d-04a8-41e4-8cb9-33ca51678ffb
       X-Runtime:
-      - '0.005808'
+      - '0.084456'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.61, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=2.18
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=21.84,
+        instantiation.active_record;dur=0.14, process_action.action_controller;dur=58.10
       Content-Length:
       - '244'
     body:
       encoding: UTF-8
       string: '{"data":{"id":"322474","type":"market","attributes":{"vendor_count":35,"name":"2nd
         Street Farmers'' Market","street":"194 second street","city":"Amherst","county":"Amherst","state":"Virginia","zip":"24521","lat":"37.583311","lon":"-79.048573"}}}'
-  recorded_at: Thu, 04 Apr 2024 20:53:35 GMT
+  recorded_at: Fri, 05 Apr 2024 00:16:14 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v0/markets/322474/vendors
@@ -91,12 +91,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bede9da6-3008-413f-bee1-300b2615e123
+      - 875336c2-18ec-49ae-9fab-246892c11bd7
       X-Runtime:
-      - '0.006690'
+      - '0.022810'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.32, instantiation.active_record;dur=0.12,
-        process_action.action_controller;dur=3.02
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=2.72, instantiation.active_record;dur=3.87,
+        process_action.action_controller;dur=10.84
       Content-Length:
       - '7881'
     body:
@@ -172,110 +172,5 @@ http_interactions:
         Tad Langosh","contact_phone":"848-755-8522","credit_accepted":false}},{"id":"55055","type":"vendor","attributes":{"name":"Herb
         Appeal","description":"Fresh herbs and herbal products.","contact_name":"Mattie
         Doyle","contact_phone":"394.419.5264","credit_accepted":true}}]}'
-  recorded_at: Thu, 04 Apr 2024 20:53:35 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/v0/vendors/55297
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"74daca843b392240baee8284c2882f36"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 716ab9ce-836f-4b95-87d3-879feeee531e
-      X-Runtime:
-      - '0.004823'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.46, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.14
-      Content-Length:
-      - '243'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"55297","type":"vendor","attributes":{"name":"Orange
-        County Olive Oil","description":"Handcrafted olive oil made from locally grown
-        olives","contact_name":"Syble Hamill","contact_phone":"1-276-593-3530","credit_accepted":false}}}'
-  recorded_at: Thu, 04 Apr 2024 20:53:35 GMT
-- request:
-    method: get
-    uri: http://localhost:3000/api/v0/markets/322474
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"5e733b72a4473698cd0065fe9c74390b"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3d24765a-8897-4aa1-828d-b459c781731c
-      X-Runtime:
-      - '0.045510'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.38, instantiation.active_record;dur=0.28,
-        process_action.action_controller;dur=9.07
-      Content-Length:
-      - '244'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"322474","type":"market","attributes":{"vendor_count":35,"name":"2nd
-        Street Farmers'' Market","street":"194 second street","city":"Amherst","county":"Amherst","state":"Virginia","zip":"24521","lat":"37.583311","lon":"-79.048573"}}}'
-  recorded_at: Fri, 05 Apr 2024 03:39:01 GMT
+  recorded_at: Fri, 05 Apr 2024 00:17:07 GMT
 recorded_with: VCR 6.2.0
